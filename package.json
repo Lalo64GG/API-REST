@@ -1,0 +1,22 @@
+{
+    "name": "test-api-sqlite",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js",
+        "migrate": "node src/migrations/20231128120000_create_departament_table.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "seeder": "node src/seeders/departamentos.seeder.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "nodemon": "^3.0.2",
+        "sqlite": "^5.1.1",
+        "sqlite3": "^5.1.7"
+    }
+}
